@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbarMain {
+            position: fixed;
+            height: 4rem;
+            width: 100vw;
+            background-color: aqua;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 2rem;
+            /* border: 3px solid red; */
+        }
+
+        .navbarDiv {
+            color: black;
+        }
+
+        .navbarA {
+            color: black;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .navbarImg {
+            margin: 1rem 2rem;
+            cursor: pointer;
+        }
+
+        .loginDiv {
+            /* border:2px solid red; */
+            height: 2rem;
+            width: 40rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .navbarButton {
+            background-color: #a04533;
+            /* Green */
+            border-radius: 20%;
+            border: 3px solid orange;
+            color: white;
+            padding: 1rem 1.2rem;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.3rem;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+        .navbarButton:hover{
+            background-color: #e6ada2;
+        }
+
+        .contentMain {
+            min-height: 80vh;
+            width: 100vw;
+            background-color: rgb(225, 210, 228);
+        }
+        .galaryDiv{
+            display: flex;
+            justify-content: start;
+            /* border: 2px solid red; */
+        }
+        .galaryDivmain{
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .home{
+            height: 20rem;
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .galaryImg{
+            gap: 1rem;
+            margin: 1rem;
+            margin-top: 2rem;
+            height: 10rem;
+            width: 10rem;
+        }
+
+        .footerMain {
+            /* width: 100vw; */
+            background-color: rgb(116, 77, 124);
+
+        }
+        .about{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbarMain" id="navbarMain">
+        <div class="navbarDiv"><a href="/"><img class="navbarImg" style="height: 3rem; width:3rem"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1200px-Heart_coraz%C3%B3n.svg.png" /></a>
+        </div>
+        <div class="navbarDiv"><a class="navbarA" href="/">Home</a></div>
+        <div class="navbarDiv"><a class="navbarA" href="#galary">Galary</a></div>
+        <div class="navbarDiv"><a class="navbarA" href="#contact">Contact</a></div>
+        <div class="navbarDiv"><a class="navbarA" href="#about">About</a></div>
+        <div class="loginDiv">
+            <form>
+                <input name="search" type="search" style="height: 2rem;" />
+                <button type="submit" style="height: 1.8rem;">search</button>
+            </form>
+            <div>
+                <button class="navbarButton">Login</button>
+                <button class="navbarButton">register</button>
+            </div>
+        </div>
+    </div>
+    <div class="contentMain" id="contentMain">
+        <div class="home">
+            <h1>Hello , I am Web Devloper</h1>
+        </div> 
+        <div class="galaryDivmain" >
+                <div class="galaryDiv" id="galary">
+                    <img class="galaryImg" alt="image not found" src="https://images.unsplash.com/photo-1666914220840-942adc2d3529?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"> 
+                    <img class="galaryImg" alt="image not found" src="https://images.unsplash.com/photo-1666845270404-40def71fb33b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1933&q=80"> 
+                    <img class="galaryImg" alt="image not found" src="https://images.unsplash.com/photo-1661961111184-11317b40adb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1OHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60">
+                    <img class="galaryImg" alt="image not found" src="https://images.unsplash.com/photo-1661347335435-6d851eb110f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw3OHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60"> 
+                    <img class="galaryImg" alt="image not found" src="https://images.unsplash.com/photo-1666756201003-b46eaf2d5cf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1NHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60"> 
+                    <img class="galaryImg" alt="image not found" src="https://images.unsplash.com/photo-1666923345950-ec4e7e0d1620?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"> 
+                 </div>
+                 <div class="galaryDiv" id="galary">
+                    <img class="galaryImg" alt="image not found" src="https://images.unsplash.com/photo-1666914220840-942adc2d3529?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"> 
+                    <img class="galaryImg" alt="image not found" src="https://images.unsplash.com/photo-1666845270404-40def71fb33b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1933&q=80"> 
+                    <img class="galaryImg" alt="image not found" src="https://images.unsplash.com/photo-1661961111184-11317b40adb2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw1OHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60">
+                    <img class="galaryImg" alt="image not found" src="https://images.unsplash.com/photo-1661347335435-6d851eb110f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw3OHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60"> 
+                    <img class="galaryImg" alt="image not found" src="https://images.unsplash.com/photo-1666756201003-b46eaf2d5cf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1NHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=60"> 
+                    <img class="galaryImg" alt="image not found" src="https://images.unsplash.com/photo-1666923345950-ec4e7e0d1620?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMTF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"> 
+                 </div>
+        </div>
+        <div class="About" id="about" >
+            <h1>this is a about Page</h1>
+            <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consecLorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consec
+            </div>
+        </div>
+        <div class="Contact" id="contact">
+            <h1>This is a Contact Page</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet eos expedita et suscipit assumenda maiores! Sunt fuga accusamus totam quam ab, dolor molestiae ex, ipsum consequuntur culpa autem labore voluptatibus.</p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet totam porro maxime? Ipsam ad repellendus voluptatibus animi. Animi aut dolore quo, culpa quasi praesentium molestiae esse nostrum adipisci exercitationem repudiandae?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. E
+        </div>
+    </div>
+</body>
+
+</html>
